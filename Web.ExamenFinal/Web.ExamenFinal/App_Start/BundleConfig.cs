@@ -23,6 +23,11 @@ namespace Web.ExamenFinal
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/personalizado")
+               .Include("~/Scripts/Compartido/modal.js")
+               );
+
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));

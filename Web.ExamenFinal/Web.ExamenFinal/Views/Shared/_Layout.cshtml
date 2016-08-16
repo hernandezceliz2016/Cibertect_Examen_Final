@@ -7,6 +7,9 @@
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/personalizado")
+
+    
 
 </head>
 <body>
@@ -18,16 +21,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                EXAMEN FINAL CIBERTECT WEB DEVELOPER
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+            <nav class="navbar-collapse collapse">
+                @Html.Partial("_OpcionesMenu")
+                @Html.Partial("_InicioSesion")
+            </nav>
         </div>
     </div>
     <div class="container body-content">
